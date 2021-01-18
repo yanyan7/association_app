@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# テーブル設計
 
-Things you may want to cover:
+## Studentテーブル
+id  name
+1   田中
+2   佐藤
+3   鈴木
 
-* Ruby version
 
-* System dependencies
+## Student_Subjectテーブル
+id  student_id  subject_id
+1   1           1
+2   1           4
+3   1           5
+4   2           2
+5   2           3
+6   3           1
+7   3           2
+8   3           3
+9   3           4
+10  3           5
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Subjectテーブル
+id  name
+1   国語
+2   数学
+3   理科
+4   社会
+5   英語
