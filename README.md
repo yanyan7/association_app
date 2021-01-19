@@ -1,32 +1,24 @@
 # README
 
+# 概要
+## 多対多のアソシエーションの練習用プログラム
+
 # テーブル設計
+## studentテーブル
++ id:   integer
++ name: string
++ created_at:  timestamp
++ updated_at:  timestamp
 
-## Studentテーブル
-id  name
-1   田中
-2   佐藤
-3   鈴木
+## subjectテーブル
++ id:   integer
++ name: string
++ created_at:  timestamp
++ updated_at:  timestamp
 
-
-## Student_Subjectテーブル
-id  student_id  subject_id
-1   1           1
-2   1           4
-3   1           5
-4   2           2
-5   2           3
-6   3           1
-7   3           2
-8   3           3
-9   3           4
-10  3           5
-
-
-## Subjectテーブル
-id  name
-1   国語
-2   数学
-3   理科
-4   社会
-5   英語
+## student_subjectテーブル
++ id:   integer
++ student_id:  integer
++ subject_id:  integer
++ created_at:  timestamp
++ updated_at:  timestamp

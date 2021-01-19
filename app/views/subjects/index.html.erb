@@ -1,0 +1,13 @@
+<h1>科目一覧</h1>
+<table>
+  <tr>
+    <th>id</th>
+    <th>name</th>
+  </tr>
+  <% @subjects.each do |subject|%>
+    <tr>
+      <td><%= subject.id %></td>
+      <td><%= link_to subject.name, subject %></td>
+    </tr>
+  <% end %>
+</table>

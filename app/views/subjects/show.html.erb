@@ -1,0 +1,5 @@
+<h1><%= @subject.name %>の履修者一覧</h1>
+
+<% @subject.students.each do |student| %>
+  <%= student.name %><br>
+<% end %>
